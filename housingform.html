@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>BNI</title>
+
+</head>
+<body>
+
+<style>
+h1{
+text-align: center;
+  }
+ h2{
+   text-align: left;
+   font-size: 12px;
+   font-style: oblique;
+   color: grey;
+ }
+
+</style>
+<h1> Form </h1>
+<h2>HAVE A QUESTION... ASK ONE OF OUR HOUSING SPECIALISTS!<h2>
+<p> ALL FIELDS REQUIRED</p>
+<fieldset>
+<form id="housingform" method="POST" action="housing_form.php">
+<input type="text" name="Landlord" size="15" placeholder="Do you serve as a landlord?">
+<input type="text" name="Tenant"   size="15" placeholder="Do you serve as a Tenant?"><br />
+<input type="text" name="Fname"    size="15" placeholder="What is your first name?">
+<input type="text" name="Lname"    size="15" placeholder="What is your last name?"><br />
+<input type="text" name="Phone"    size="15" placeholder="What is your phone number?">
+<input type="text" name="Email"    size="15" placeholder="What is your email address?">
+<input type="text" name="Zip"      size="15" placeholder="What is your Zip code?"><br />
+<input type="text" name="Age"      size="15" placeholder="What is your age?">
+<input type="text" name="Gender"   size="15" placeholder="What is your gender?"><br />
+<input type="text" name="Income"   size="15" placeholder="What is your annual household income?">
+<input type="text" name="Family"   size="15" placeholder="What is your household family size?"><br />
+<input type="text" name="State"    size="15" placeholder="What is the state of the property in question?">
+<input type="text" name="City"     size="15" placeholder="What is the city of the property in question?">
+<input type="text" name="County"   size="15" placeholder="What is the county of the property in question?">
+<input type="text" name="Address"  size="15" placeholder="What is the address of the property in question?"></br>
+<select            name="Race">
+  <option default>Identify Race</option>
+  <option value="White">White</option>
+  <option value="Black">Black</option>
+  <option value="Asian">Asian</option>
+  <option value="NativeAmerican">Native American</option>
+  <option value="Other">Other</option>
+  <option value="More">More than one</option>
+  <option value="NoAnswer">No Answer</option>
+</select>
+<select            name="Hispanic">
+  <option default>Are you Hispanic?</option>
+  <option value="Yes">Yes</option>
+  <option value="No">No</option>
+</select></br>
+<select            name="HousingType">
+  <option default>Housin type</option>
+  <option value="Apartment">Apartment</option>
+  <option value="SingleFamily">SingleFamily</option>
+  <option value="CondoRental">CondoRental</option>
+  <option value="Duplex">Duplex</option>
+  <option value="Triplex">Triplex</option>
+  </select>
+<select            name="HousingSubsidy">
+    <option default>Housing subsidy</option>
+    <option value="PublicHousing">Public Housing</option>
+    <option value="HousingChoice">Housing Choice Voucher</option>
+    <option value="MBQ">MBQ</option>
+    <option value="None">None</option>
+    </select><br />
+
+</fieldset>
+<input type="submit" name="submit" value="Submit">
+</form>
+  </body>
+
+</html>
