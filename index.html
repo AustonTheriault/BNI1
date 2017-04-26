@@ -24,6 +24,7 @@ body
 		max-height: 100px;
 		min-height: 50px;
 		text-align: center;
+		border-radius: 10px;
 }
 
 /* Dropdown button on hover & focus */
@@ -92,15 +93,35 @@ body
 	 					{
 							window.location.href = "housing.html";
 	 					}
-						</script>
+						
 
 <!-- End of FairHousing Button JavaScript -->
 <!-- Start of Resource Button JavaScript -->
-<script type="text/javascript">
+
 	function callResourcePage()
 	{
 		window.location.href = "resource.html";
 	}
+	function linkButton()
+		{
+			document.getElementById("linkButtonA").classList.toggle("show");
+		}
+	window.onclick = function(event)
+		{
+			if (!event.target.matches('.dropbtn'))
+			{
+				var dropdowns = document.getElementsByClassName("dropdown-content");
+				var i;
+				for (i = 0; i < dropdowns.length; i++)
+				{
+					var openDropdown = dropdowns[i];
+					if (openDropdown.classList.contains('show'))
+					{
+						openDropdown.classList.remove('show');
+					}
+				}
+			}
+		}
 	</script>
 <!-- End of Resource Button Javascript -->
 </head>
@@ -116,34 +137,13 @@ body
 
 			</div>
 	</div> -->
-	<div class="dropdown">
+	<div class="dropdown" style="align:center">
 	<button onclick="callResourcePage()" class="dropbtn">Resource Links and Agencies</button>
 	</div>
 <!-- End of Resource Links Button html -->
 
 <!-- Start of Resource Links Button Javascript -->
-	<script>
-		function linkButton()
-			{
-				document.getElementById("linkButtonA").classList.toggle("show");
-			}
-		window.onclick = function(event)
-			{
-				if (!event.target.matches('.dropbtn'))
-				{
-					var dropdowns = document.getElementsByClassName("dropdown-content");
-					var i;
-					for (i = 0; i < dropdowns.length; i++)
-					{
-						var openDropdown = dropdowns[i];
-						if (openDropdown.classList.contains('show'))
-						{
-							openDropdown.classList.remove('show');
-						}
-					}
-				}
-			}
-		</script>
+
 <!-- End of Resource Links Button Javascript -->
 
 <!-- Start of Tenant Button html -->
