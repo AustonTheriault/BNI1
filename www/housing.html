@@ -16,34 +16,72 @@
 	 background: white;
  }
   p{
-		text-align: left;
+		text-align: center;
 		font-size: 12px;
+		font-family: Arial;
 	}
-	.fhbtn{
-		text-align: center;
-		
+
+
+.tbtn{
+		width: 100%
 	}
-	.p6{
-		text-align: center;
-		font-size: 20px;
+.dropbtn {
+	    background-color: white;
+	    color: black;
+	    font-size: 15px;
+			font-style: normal;
+	    cursor: pointer;
+			border: solid;
+			max-width: 125px;
+			min-width: 125px;
+			max-height: 100px;
+			min-height: 50px;
+			text-align: center;
+			border-radius: 10px;
 	}
+.dropbtn:hover, .dropbtn:focus {
+	    background-color: grey;
+		}
+.hcbtn{
+	width: 100%;
+}
+.homebtn{
+	position: absolute;
+	top: 0%;
+	left: 0%;
+}
+
 </style>
 <script type="text/javascript">
-	function callFairHousingFormPage()
+	function callTenantPage()
 	{
-		window.location.href = "housingform.html";
+		window.location.href = "tenant.html";
 	}
+	function callhousingcomplaintform()
+	{
+		window.location.href = "HComplaint.html"
+	}
+	function home()
+	{
+		window.location.href = "index.html"
+	}
+
 	</script>
 
-<h1>Fair Housing</h1>
-<p id = "p1"> 	The Fair Housing Department’s mission is to combat housing discrimination in Maryland using a number of approaches, including investigation, advocacy, and community education. </p>
-<p id = "p2"> 	If you are a Maryland resident and you have a question about fair housing, or you suspect you have been discriminated against in any aspect of home seeking on the basis of your race, color, national origin, religion, sex, familial status, disability, marital status, sexual orientation, gender identity, or another characteristic protected in your locality, proceed to the form below to submit a Fair Housing Inquiry to one of our specialists.
+</br>
+<h1><strong>Fair Housing</strong></h1>
+<p> 	The Fair Housing Department’s mission is to combat housing discrimination in Maryland using a number of approaches, including investigation, advocacy, and community education. </p>
+<p> 	If you are a Maryland resident and you have a question about fair housing, or you suspect you have been discriminated against in any aspect of home seeking on the basis of your race, color, national origin, religion, sex, familial status, disability, marital status, sexual orientation, gender identity, or another characteristic protected in your locality, proceed to the form below to submit a Fair Housing Inquiry to one of our specialists.
 </p>
-<p id = "p3"> 	You may also call (410) 243-4400 to speak with one of our specialists during operating hours, M-F 9a-5p.</p>
-<div class="fhbtn">
-<button onclick="callFairHousingFormPage()" class="fhbtn">Submit a Fair Housing Inquiry</button>
-</div>
-<p class = "p6"> Have a tenant or landlord issue that is not related to discrimination? Check out our Tenant-Landlord Department!</p>
+<p> 	You may also call (410) 243-4400 to speak with one of our specialists during operating hours, M-F 9a-5p.</p>
+<button onclick="callTenantPage()" class="tbtn" >Have a tenant or landlord issue that is not related to discrimination? Check out our Tenant-Landlord Department!</p>
 
+<div>
+	<button onclick="callhousingcomplaintform()" class="hcbtn"> Submit a housing complaint form here </button>
+<div>
+
+	<div class="homebtn">
+		<button onclick="home()" class="dropbtn"> Home </button>
+	</div>
 	</body>
 </html>
