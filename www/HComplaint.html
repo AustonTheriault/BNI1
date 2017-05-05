@@ -4,68 +4,66 @@
 <head>
 <title>BNI</title>
 
+<script>
+ function home()
+  {
+    window.location.href = "index.html"
+  }
+</script>
 </head>
 <body>
-
 <style>
-
+ .dropbtn
+  {
+    background-color: white;
+    color: black;
+    font-size: 15px;
+		font-style: normal;
+    cursor: pointer;
+		border: solid;
+		max-width: 125px;
+		min-width: 125px;
+		max-height: 100px;
+		min-height: 50px;
+		text-align: center;
+		border-radius: 10px;
+  }
+ .dropbtn:hover, .dropbtn:focus
+  {
+    background-color: grey;
+  }
+ .homebtn
+  {
+	 position: absolute;
+	 top: 0%;
+	 left: 0%;
+  }
 </style>
-<h1>
-  Fair Housing Complaint
-</h1>
+</br>
+<h1>Fair Housing Complaint</h1>
 <fieldset>
  <form id="HComplaintpersonal" method="POST" action="">
 
- <label for="FName"> <Strong>First Name:</strong></label></br>
- <input type="text" id="FName" name="FName" size="20" ></br>
-
- <label for="LName"> <Strong>Last Name:</strong></label></br>
- <input type="text" id="LName" name="LName" size="20" ></br>
-
- <label for="FName"> <Strong>Address:</strong></label></br>
- <input type="text" id="Address" name="Add" size="20" ></br>
-
- <label for="FName"> <Strong>City:</strong></label></br>
- <input type="text" id="City" name="City" size="20" ></br>
-
- <label for="FName"> <Strong>Zip:</strong></label></br>
- <input type="text" id="Zip" name="Zip" size="20" ></br>
-
- <label for="FName"> <Strong>Day Phone:</strong></label></br>
- <input type="text" id="DPhone" name="DPhone" size="20" ></br>
-
- <label for="FName"> <Strong>Evening Phone:</strong></label></br>
- <input type="text" id="EPhone" name="EPhone" size="20" ></br>
-
- <label for="FName"> <Strong>Email:</strong></label></br>
- <input type="text" id="Email" name="Email" size="20" ></br>
+    <label for="FName"> <Strong>First Name:</strong></label></br>
+     <input type="text" id="FName" name="FName" size="20" ></br>
+    <label for="LName"> <Strong>Last Name:</strong></label></br>
+     <input type="text" id="LName" name="LName" size="20" ></br>
+    <label for="Address"> <Strong>Address:</strong></label></br>
+     <input type="text" id="Address" name="Add" size="20" ></br>
+    <label for="City"> <Strong>City:</strong></label></br>
+     <input type="text" id="City" name="City" size="20" ></br>
+    <label for="Zip"> <Strong>Zip:</strong></label></br>
+      <input type="text" id="Zip" name="Zip" size="20" ></br>
+    <label for="DPhone"> <Strong>Day Phone:</strong></label></br>
+      <input type="text" id="DPhone" name="DPhone" size="20" ></br>
+    <label for="EPhone"> <Strong>Evening Phone:</strong></label></br>
+      <input type="text" id="EPhone" name="EPhone" size="20" ></br>
+    <label for="Email"> <Strong>Email:</strong></label></br>
+      <input type="text" id="Email" name="Email" size="20" ></br>
+ </form>
 </fieldset>
-<fieldset>
-  <form id="HComplaintinfo" method="POST" action="">
-  <p style="font-size:30px"> <strong>Enter Complaint Information</strong> </p>
-  <label for="Brief">State Briefly what happened:</label></br>
-  <input type="text" id="Brief" name="Brief" size="20" ></br>
-
-  <label for="LName"> <Strong>Last Name:</strong></label></br>
-  <input type="text" id="LName" name="LName" size="20" ></br>
-
-  <label for="FName"> <Strong>Address:</strong></label></br>
-  <input type="text" id="Address" name="Add" size="20" ></br>
-
-  <label for="FName"> <Strong>City:</strong></label></br>
-  <input type="text" id="City" name="City" size="20" ></br>
-
-  <label for="FName"> <Strong>Zip:</strong></label></br>
-  <input type="text" id="Zip" name="Zip" size="20" ></br>
-
-  <label for="FName"> <Strong>Day Phone:</strong></label></br>
-  <input type="text" id="DPhone" name="DPhone" size="20" ></br>
-
-  <label for="FName"> <Strong>Evening Phone:</strong></label></br>
-  <input type="text" id="EPhone" name="EPhone" size="20" ></br>
-
-  <label for="FName"> <Strong>Email:</strong></label></br>
-  <input type="text" id="Email" name="Email" size="20" ></br>
-
+<div class="homebtn">
+  	<button onclick="home()" class="dropbtn"> Home </button>
+</div>
 </body>
 </html>
